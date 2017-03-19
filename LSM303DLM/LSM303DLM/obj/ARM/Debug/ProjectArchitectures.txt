@@ -1,0 +1,1 @@
+C:\Users\Paul\documents\visual studio 2017\Projects\LSM303DLM\LSM303DLM\LSM303DLM.csproj;arm

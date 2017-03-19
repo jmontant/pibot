@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="LSM303DLM.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LSM303DLM"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Margin="0,10,0,0">
+            <TextBlock x:ConnectionId='6' x:Name="AccelTitle" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="LSM303DLM Accelerometer Data" VerticalAlignment="Top" Height="67" Width="640" FontSize="48" TextAlignment="Center"/>
+            <TextBlock x:ConnectionId='7' x:Name="AccelText_X_Axis" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="X Axis: Not Initialized" VerticalAlignment="Top" Width="312" FontSize="26.667" Foreground="#FFC71818" TextAlignment="Center"/>
+            <TextBlock x:ConnectionId='8' x:Name="AccelText_Y_Axis" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Y Axis: Not Initialized" VerticalAlignment="Top" Width="312" FontSize="26.667" Foreground="#FF14D125" TextAlignment="Center"/>
+            <TextBlock x:ConnectionId='9' x:Name="AccelText_Z_Axis" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Z Axis: Not Initialized" VerticalAlignment="Top" Width="312" FontSize="26.667" Foreground="#FF1352C1" TextAlignment="Center"/>
+            <TextBlock x:ConnectionId='10' x:Name="AccelText_Status" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Status: Initializing ..." VerticalAlignment="Top" Width="1346" FontSize="32" TextAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Margin="0,10,0,0">
+            <TextBlock x:ConnectionId='1' x:Name="MagTitle" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="LSM303DLM Magnetometer Data" VerticalAlignment="Top" Height="67" Width="640" FontSize="48" TextAlignment="Center"/>
+            <TextBlock x:ConnectionId='2' x:Name="MagText_X_Axis" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="X Axis: Not Initialized" VerticalAlignment="Top" Width="312" FontSize="26.667" Foreground="#FFC71818" TextAlignment="Center"/>
+            <TextBlock x:ConnectionId='3' x:Name="MagText_Y_Axis" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Y Axis: Not Initialized" VerticalAlignment="Top" Width="312" FontSize="26.667" Foreground="#FF14D125" TextAlignment="Center"/>
+            <TextBlock x:ConnectionId='4' x:Name="MagText_Z_Axis" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Z Axis: Not Initialized" VerticalAlignment="Top" Width="312" FontSize="26.667" Foreground="#FF1352C1" TextAlignment="Center"/>
+            <TextBlock x:ConnectionId='5' x:Name="MagText_Status" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Status: Initializing ..." VerticalAlignment="Top" Width="1346" FontSize="32" TextAlignment="Center"/>
+        </StackPanel>
+    </Grid>
+</Page>
+
